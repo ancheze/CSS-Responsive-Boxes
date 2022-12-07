@@ -1,3 +1,110 @@
 body {
   background: peachpuff;
 }
+
+
+.container {
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  display: grid;
+  grid-gap: 1rem;
+  
+}
+
+.a {
+  border: 3px solid rgb(95, 26, 186);
+  min-height: 50px;
+  grid-area: a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b {
+  min-height: 50px;
+  border: 3px solid rgb(69, 62, 4);
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c {
+  min-height: 50px;
+  border: 3px solid rgb(165, 10, 82);
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d {
+  min-height: 50px;
+  border: 3px solid rgb(66, 17, 95);
+  grid-area: d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.e {
+  min-height: 50px;
+  border: 3px solid rgb(148, 211, 24);
+  grid-area: e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f {
+  min-height: 50px;
+  border: 3px solid rgb(235, 6, 83);
+  grid-area: f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.g {
+  min-height: 50px;
+  border: 3px solid rgb(19, 150, 211);
+  grid-area: g;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h {
+  min-height: 50px;
+  border: 3px solid rgb(195, 238, 55);
+  grid-area: h;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 70px 70px 200px;
+  
+    grid-template-areas: 
+    "a a a" 
+    "b c d"
+    "e f g"
+    "h h h";
+    }
+}  
+    
+@media screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+  
+    grid-template-areas: 
+    "a a a a" 
+    "b c d h"
+    "e f g h";
+}
+}
